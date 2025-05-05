@@ -23,3 +23,34 @@ a {
 .dvCaixas div:nth-child(3) {
   background-color: rgb(255, 179, 186);
 }
+
+.dvSearch {
+  margin-top: 20px;
+}
+
+.dvSearch div,
+.dvSearch form input,
+.dvSearch form button {
+  display: inline-block;
+}
+
+.dvSearch form input {
+  width: 80%;
+}
+
+.dvSearch form button {
+  width: 19%;
+}
+
+.dvSearch div:nth-child(1) {
+  width: 80%;
+}
+
+.dvSearch div:nth-child(2) {
+  width: 19%;
+  text-align: right;
+}
+
+.dvTabela {
+  margin-top: 20px;
+}

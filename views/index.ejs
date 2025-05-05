@@ -26,13 +26,42 @@
     <div class="dvSearch">
       <div>
         <form action="/">
-          <input type="text" class="form-control" name="tipo">
+          <input type="text" placeholder="Digite algo..." class="form-control" name="tipo">
           <button type="submit" class="btn btn-primary">Buscar</button>
         </form>
       </div>
       <div>
+        <a href="/adicionar" class="btn btn-primary">Adicionar</a>
 
       </div>
+    </div>
+
+    <div class="dvTabela">
+      <table class="table table-bordered table-striped">
+    <thead class="table-light">
+      <tr>
+        <th>Tipo</th>
+        <th>Valor</th>
+        <th>Status</th>
+        <th></th> <!-- Coluna vazia para ações -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Despesa</td>
+        <td>R$ 200,00</td>
+        <td><span class="badge bg-danger">Pendente</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Receita</td>
+        <td>R$ 500,00</td>
+        <td><span class="badge bg-success">Confirmado</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
     </div>
 
 
