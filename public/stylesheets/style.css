@@ -1,0 +1,25 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+.dvCaixas {
+  width: 100%;
+  text-align: center;
+}
+
+.dvCaixas div {
+  display: inline-block;
+  text-align: left;
+  background-color: #cfcfcf;
+  width: 33%;
+  padding: 20px;
+}
+
+.dvCaixas div:nth-child(3) {
+  background-color: rgb(255, 179, 186);
+}
