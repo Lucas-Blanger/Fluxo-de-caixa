@@ -29,4 +29,38 @@ router.get("/", async function (req, res) {
   }
 });
 
+router.get("/excluir/:id", async function (req, res, next) {
+  const id = req.params.id;
+
+  try {
+    await Caixa.destroy({
+      where: { id: id },
+    });
+    res.redirect("/");
+  } catch (err) {
+    console.error("Erro ao excluir:", err);
+    next(err);
+  }
+});
+
+router.get("/adicionar", function (req, res) {
+  res.render("adicionar");
+});
+router.post("/cadastrar", async function (req, res, next) {
+  const { tipo, valor, status } = req.body;
+
+  try {
+    await Caixa.create({
+      tipo,
+      valor,
+      status,
+    });
+
+    res.redirect("/");
+  } catch (err) {
+    console.error("Erro ao cadastrar:", err);
+    next(err);
+  }
+});
+
 module.exports = router;

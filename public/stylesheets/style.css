@@ -20,6 +20,10 @@ a {
   padding: 20px;
 }
 
+.dvCaixas div:nth-child(2) {
+  background-color: rgb(173, 216, 183);
+}
+
 .dvCaixas div:nth-child(3) {
   background-color: rgb(255, 179, 186);
 }
